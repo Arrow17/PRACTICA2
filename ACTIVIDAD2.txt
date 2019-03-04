@@ -1,0 +1,6 @@
+  MOVLW b'00000111'   ;Channel A1 is selected and the module is enabled 
+    MOVWF ADCON0 
+    MOVLW b'00000000'   ;Vref-, Vref+ are defined 
+    MOVWF ADCON1 
+    MOVLW b'00010111'   ;As clock source, the RC oscillator of the converter 
+    MOVWF ADCON2	;left justified 
